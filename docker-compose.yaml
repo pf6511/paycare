@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  etl:
+    build: .
+    volumes:
+      - ./data/input:/data/input
+      - ./data/output:/data/output
+
+    environment:
+      - INPUT_FILE=/data/input/input_data.csv
+      - OUTPUT_FILE=/data/output/output_data.csv
