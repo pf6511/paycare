@@ -35,7 +35,7 @@ jobs:
       - name: Prepare input data
         run: |
           mkdir -p data/input data/output
-          cp input_data.csv data/input/input_data.csv
+          cp data/input_data.csv data/input/input_data.csv
 
       - name: Run ETL container
         run: |
